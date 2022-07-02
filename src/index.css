@@ -1,13 +1,149 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.App {
+  display: flex;
+  height: 100vh;
+}
+
+.left-block {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0px 37px;
+}
+
+header
+{
+  width: 80%;
+  margin-bottom: 60px;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 400;
+  font-family: "MADE-Gentle";
+  margin-bottom: 18px;
+}
+
+h2 {
+  font-family: 'DMSans';
+  font-weight: 400;
+  font-size: 20px;
+}
+
+span {
+  font-family: 'DMSans';
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: 0.15px;
+}
+
+p{
+  font-family: "Roboto";
+  color: #5E6060;
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+input {
+  font-family: 'DMSans';
+  height: 42px;
+  padding: 8px 24px;
+  border: 1px solid #95969A;
+  border-radius: 8px;
+  color: #95969A;
+  font-weight: 700;
+  font-size: 15px;
+  background-color: #FFFFFF;
+  margin-right: 8px;
+  cursor: pointer;
+  margin-bottom: 8px;
+}
+
+.inputButtonSelected {
+  border: 1px solid #FFCD00;
+  color: #FFCD00;
+  background: rgba(255, 205, 0, 0.08);
+}
+
+button {
+  color:#b8b5b5;
+  font-family: 'DMSans';
+  letter-spacing: 0.46px;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+}
+
+.submitBtn {
+  height: 50px;
+  border: 1px solid #dfdfdf;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 55px;
+  margin-bottom: 25px;
+}
+
+.backBtn {
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.canSubmite {
+  background: #232525;
+  color:#FFFFFF;
+}
+
+.question-block {
+  margin-bottom: 25px;
+}
+
+.arrow-left {
+  margin-right: 16px;
+  transform: rotate(180deg) translate(-4px);
+  height: 10px;
+  width: 10px;
+}
+
+.arrow-right {
+  margin-left: 16px;
+  transform: translateY(4px);
+  height: 16px;
+  width: 16px;
+}
+
+.left-img {
+  max-height: 100%;
+}
+
+
+@font-face {
+  font-family: 'MADE-Gentle';
+  src: local('MADE-Gentle'), url(./fonts/MADE-Gentle.otf) format('opentype');
+}
+
+@font-face {
+  font-family: 'DMSans';
+  src: local('DMSans-Regular'), url(./fonts/DMSans-Regular.ttf) format('opentype');
+}
+
+
+@font-face {
+  font-family: 'Roboto';
+  src: local('Roboto-Regular'), url(./fonts/Roboto-Regular.ttf) format('opentype');
+}
+
+
+@media screen and (max-width: 800px){
+  .App {
+    flex-direction: column;
+  }
 }
